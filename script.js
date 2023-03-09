@@ -25,10 +25,9 @@ function generatePassword() {
 function getPrompts() {
   charsArray = [];
   console.log("I clicked the button")
+  charsLength = prompt("How many chacters would you like your password to be? (You must choose between 8 and 124!)");
   
-charsLength = prompt("How many chacters would you like your password to be? (You must choose between 8 and 124!)");
-  
-  if (isNaN(charsLength) || charsLength < 8 || charsLength > 124) {
+  if (isNaN(charsLength) || charsLength < 8 || charsLength > 128) {
     return false;
   }
   if (confirm("Would you like to use special characters?")); {
