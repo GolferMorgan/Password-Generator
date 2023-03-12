@@ -1,5 +1,4 @@
-
-// Assignment Code
+//added the variables
 var generateBtn = document.querySelector("#generate");
 
 var charsUppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y,", "Z"];
@@ -10,7 +9,7 @@ var charsLength = 8;
 var charsArray = [];
 var password = "";
 
-// added function and console log to show the button was clicked
+// added the for loop
 function generatePassword() {
   var password = "";
   for(i = 0; i < charsLength; i++) {
@@ -21,7 +20,8 @@ function generatePassword() {
 }
 
 
-// asking how many characters and making sure length falls within the parameters
+// asking how many characters and making sure length falls within the parameters//
+//added console log to show the button was clicked//
 function getPrompts() {
   charsArray = [];
   console.log("I clicked the button")
@@ -45,8 +45,6 @@ function getPrompts() {
   return true;
 }
 
-
-// Write password to the #password input
 function writePassword() {
   var Prompts = getPrompts();
   
@@ -58,5 +56,4 @@ function writePassword() {
 }
 }
 
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);

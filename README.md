@@ -10,7 +10,10 @@ For the first step I had to make all of the variables that would be used in the 
 The page has been deployed and the links are as follows:
 
 Website:
-https://golfermorgan.github.io/Password-Gen/
+https://golfermorgan.github.io/Password-Generator/
 
 GitHub Repository:
-https://github.com/GolferMorgan/Password-Gen
+https://github.com/GolferMorgan/Password-Generator
+
+## Screenshot
+<img width="1559" alt="Screenshot 2023-03-12 at 1 13 50 PM" src="https://user-images.githubusercontent.com/124836497/224564404-d2b3d316-1202-439f-8d75-bb115066d1d8.png">
