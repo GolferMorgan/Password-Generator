@@ -9,6 +9,7 @@ var charsLength = 8;
 var charsArray = [];
 var password = "";
 
+// added password string
 // added the for loop
 function generatePassword() {
   var password = "";
@@ -19,9 +20,9 @@ function generatePassword() {
   return password;
 }
 
-
-// asking how many characters and making sure length falls within the parameters//
-//added console log to show the button was clicked//
+// added prompts and confirms
+// asking how many characters and making sure length falls within the parameters
+// added console log to show the button was clicked
 function getPrompts() {
   charsArray = [];
   console.log("I clicked the button")
