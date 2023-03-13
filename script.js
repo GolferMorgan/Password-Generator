@@ -31,20 +31,22 @@ function getPrompts() {
   if (isNaN(charsLength) || charsLength < 8 || charsLength > 128) {
     return false;
   }
-  if (confirm("Would you like to use special characters?")); {
-    charsArray = charsArray.concat(charsSpecial);
+  // Removed semicolons to get everything to run as 1 piece 
+  if (confirm("Would you like to use special characters?")) {
+    charsArray = charsArray.concat(charsSpecial)
+  } 
+  if (confirm("Would you like to use numbers?")) {
+    charsArray = charsArray.concat(charsNumber)
   }
-  if (confirm("Would you like to use numbers?")); {
-    charsArray = charsArray.concat(charsNumber);
+  if (confirm("Would you like to use lowercase letters?")) {
+    charsArray = charsArray.concat(charsLowercase)
   }
-  if (confirm("Would you like to use lowercase letters?")); {
-    charsArray = charsArray.concat(charsLowercase);
-  }
-  if (confirm("Would you like to use uppercase letters?")); {
-    charsArray = charsArray.concat(charsUppercase);
+  if (confirm("Would you like to use uppercase letters?")) {
+    charsArray = charsArray.concat(charsUppercase)
   }
   return true;
 }
+
 
 function writePassword() {
   var Prompts = getPrompts();
